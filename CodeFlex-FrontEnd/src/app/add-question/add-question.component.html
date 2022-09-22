@@ -1,0 +1,109 @@
+<app-menu-bar></app-menu-bar>
+
+
+<section class="row container-fluid gradient-custom-2" id="features">
+
+  <div class="feature-box">
+
+    <div class="outer">
+      <div class="inner">
+        <h3><b>ADD QUESTION</b></h3>
+      </div>
+    </div>
+
+    <form [formGroup]="form1" (ngSubmit)="addingQuestion()">
+      <div class="form-outline mb-4 box1">
+
+        <!--Course : <input type="number" name="course_id" [(ngModel)]=addQuestion.course_id class="form-control" formControlName="course_id" > 
+        <div *ngIf="form1.get('course_id').touched">
+          <div *ngIf="form1.get('course_id').hasError('required')" class="alert alert-danger">
+              Please Select Course
+          </div>
+        </div>-->
+        <h6>Course</h6>
+        <label for="course_id"></label>
+        <select name="course_id" id="course_id" [(ngModel)]=addQuestion.course_id class="form-control"
+          formControlName="course_id">
+          <option value="101">Java</option>
+          <option value="103">PHP</option>
+          <option value="102">Python</option>
+          <option value="104">.Net</option>
+          <option value="105">C</option>
+          <option value="106">C++</option>
+        </select>
+      </div>
+      <div class="form-outline mb-4 box2">
+        <h6>Level</h6>
+        <label for="level_id"></label>
+        <select name="level_id" [(ngModel)]=addQuestion.level_id class="form-control" formControlName="level_id">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+      <div class="form-outline mb-4 box2">
+        <h6>Question : </h6>
+        <input type="text" name="question" [(ngModel)]=addQuestion.question class="form-control"
+          formControlName="question">
+        <div *ngIf="form1.get('question').touched">
+          <div *ngIf="form1.get('question').hasError('required')" class="alert alert-danger">
+            Please Enter Question
+          </div>
+        </div>
+      </div>
+      <div class="form-outline mb-4 box2">
+        <h6>Option 1 : </h6>
+        <input type="text" name="option_1" [(ngModel)]=addQuestion.option_1 class="form-control"
+          formControlName="option_1">
+        <div *ngIf="form1.get('option_1').touched">
+          <div *ngIf="form1.get('option_1').hasError('required')" class="alert alert-danger">
+            Please Enter Option
+          </div>
+        </div>
+      </div>
+      <div class="form-outline mb-4 box2">
+        <h6>Option 2 : </h6>
+        <input type="text" name="option_2" [(ngModel)]=addQuestion.option_2 class="form-control"
+          formControlName="option_2">
+        <div *ngIf="form1.get('option_2').touched">
+          <div *ngIf="form1.get('option_2').hasError('required')" class="alert alert-danger">
+            Please Enter Option
+          </div>
+        </div>
+      </div>
+      <div class="form-outline mb-4 box2">
+        <h6>Option 3 : </h6>
+        <input type="text" name="option_3" [(ngModel)]=addQuestion.option_3 class="form-control"
+          formControlName="option_3">
+        <div *ngIf="form1.get('option_3').touched">
+          <div *ngIf="form1.get('option_3').hasError('required')" class="alert alert-danger">
+            Please Enter Option
+          </div>
+        </div>
+      </div>
+      <div class="form-outline mb-4 box2">
+        <h6>Option 4 : </h6>
+        <input type="text" name="option_4" [(ngModel)]=addQuestion.option_4 class="form-control"
+          formControlName="option_4">
+        <div *ngIf="form1.get('option_4').touched">
+          <div *ngIf="form1.get('option_4').hasError('required')" class="alert alert-danger">
+            Please Enter Option
+          </div>
+        </div>
+      </div>
+      <div class="form-outline mb-4 box2">
+        <h6>Correct Answer : </h6>
+        <input type="text" name="correct_option" [(ngModel)]=addQuestion.correct_option
+          class="form-control" formControlName="correct_option">
+        <div *ngIf="form1.get('correct_option').touched">
+          <div *ngIf="form1.get('correct_option').hasError('required')" class="alert alert-danger">
+            Please Enter Correct Answer
+          </div>
+        </div>
+      </div>
+      <div class="text-center pt-1 mb-5 pb-1">
+        <button type="submit" class="btn btn-block fa-lg gradient-custom-2 mb-3 log-in">Add Question</button>
+      </div>
+    </form>
+  </div>
+</section>

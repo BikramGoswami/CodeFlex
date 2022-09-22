@@ -1,0 +1,74 @@
+
+#features {
+    min-height: 100vh;
+    position: absolute;
+    }
+    
+  .container-fluid {
+  padding: 6% 15% 0;
+  background-color: rgb(100, 100, 100);
+  text-align: center;
+  margin: auto;
+  }
+  
+  
+  .form-outline {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .form {
+    background-color: rgb(164, 164, 164);
+    max-width: 500px;
+    margin: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  #form1 {
+    min-height: 360px;
+  }
+
+  /* #form2 {
+    min-height: 100vh;
+  } */
+
+  .log-in {
+    width: 40%;
+    margin: auto;
+    border: 1px solid orangered;
+      transition-duration: 0.3s;
+      background-color: white;
+      color: orangered;
+  }
+  .log-in:hover {
+    background-color: orangered;
+    color: white;
+  }
+  .box1 {
+    padding-top: 40px;
+  }
+  .box2 {
+    padding-bottom: 20px;
+  }
+  .outer {
+      background-color: orangered;
+      width: 170px;
+      margin: auto;
+      border-radius: 8px;
+    margin-bottom: 50px;
+  }
+  .inner {
+      background-color: rgb(100, 100, 100);
+      width: 160px;
+      margin: auto;
+      
+  }
+  h3 {
+    color: white;
+      text-align: center;
+      padding: auto;
+  }
+  h6 {
+    float: left;
+    color: white;
+  }

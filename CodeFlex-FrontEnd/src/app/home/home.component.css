@@ -1,0 +1,140 @@
+body{
+  font-family: "Montserrat-Black", sans-serif;
+}
+h1, h2, h3{
+    line-height: 1.5;
+    font-weight: bold;
+}
+h2, h3{
+    font-family: "Montserrat-Bold",sans-serif;
+}
+.color-background{
+  background-color: #ff4c68;
+  color: #fff;
+ }
+ .no-color-background{
+   background-color: #fff;
+  }
+  .another-color-background{
+      background-color: #ef8172;
+  }
+  /* title heading */
+.btn {
+  width: 200px;
+}
+.big-heading {
+  font-size: 3.5rem;
+}
+/* 
+#title {
+  background-image: url("../images/2406.jpg");
+  padding-bottom: 5%;
+  background-size: cover;
+} */
+
+h2{
+  font-size: 3rem;
+  padding: 0 10%;
+}
+h3 {
+  font-size: 1.5rem;
+  padding: 3%;
+}
+.container-fluid {
+  padding: 3% 15%;
+  text-align: center;
+}
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+}
+.navbar {
+  padding-bottom: 4.5rem;
+}
+.navbar-item{
+  padding: 0 18px;
+}
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-light";
+}
+.download-btn {
+  margin: 5% 5% 0 0;
+}
+.header-img {
+  width: 120%;
+  position: absolute;
+  /* right: 10%; */
+
+}
+.title-content{
+  text-align: left;
+}
+#features {
+  position: relative;
+  /*z-index: 1;*/
+}
+
+.feature-icon {
+  /* font-size: 3rem; can be uesd instead 0f  (fa-4x)*/
+  color: #ef8172;
+  padding-bottom: 5%;
+}
+.feature-icon:hover {
+  color: #ff4c68;
+}
+.feature-para{
+  color: #8f8f8f;
+  line-height: 1.2;
+}
+.feature-box{
+  text-align: center;
+  padding: 3% 7%;
+}
+
+/* testimonials */
+
+.testimonial-img {
+  border-radius: 100%;
+  width: 10%;
+  margin: 3%;
+}
+.press-img {
+  width: 12%;
+  margin: 0 3%;
+}
+.card-btn {
+  width: 100%;
+}
+.pricing-col {
+  padding: 3% 3%;
+}
+
+@media (max-width: 1085px) {
+  .title-content{
+    text-align: center;
+  }
+  .header-img {
+    position: static;
+    /* width: 100%; */
+    margin-top: 10%;
+  }
+}
+.cta-text{
+  font-size: 2.5rem;
+  font-weight: 900;
+  width: 50%;
+  margin: auto;
+  padding: 0;
+  color: #fff;
+}
+#footer {
+  background-color: #ff4c68;;
+}
+.footer-icon {
+  padding: 2%;
+  color: white;
+}
+.copyright{
+  color: white;
+}

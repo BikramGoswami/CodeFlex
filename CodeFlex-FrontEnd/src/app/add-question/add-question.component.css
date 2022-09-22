@@ -1,0 +1,71 @@
+
+#features {
+    min-height: 100vh;
+    position: absolute;
+    }
+    
+  .container-fluid {
+  padding: 6% 15% 0;
+  background-color: rgb(100, 100, 100);
+  text-align: center;
+  margin: auto;
+  }
+  
+  
+  .form-outline {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  form {
+    background-color: rgb(164, 164, 164);
+    max-width: 600px;
+    height: 88%;
+    margin: auto;
+    border-radius: 8px;
+  }
+  .log-in {
+    width: 40%;
+    margin: auto;
+    border: 1px solid orangered;
+      transition-duration: 0.3s;
+      background-color: white;
+      color: orangered;
+  }
+  .log-in:hover {
+    background-color: orangered;
+    color: white;
+  }
+  .box1 {
+    padding-top: 40px;
+    padding-bottom: 5px;
+  }
+  .box2 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .text-center {
+    margin-top: 40px;
+  }
+  .outer {
+      background-color: orangered;
+      width: 200px;
+      margin: auto;
+      border-radius: 8px;
+    margin-bottom: 50px;
+  }
+  .inner {
+      background-color: rgb(100, 100, 100);
+      width: 190px;
+      margin: auto;
+      
+  }
+  h3 {
+    color: white;
+      text-align: center;
+      padding: auto;
+  }
+  h6 {
+    float: left;
+    color: white;
+  }

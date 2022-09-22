@@ -1,0 +1,58 @@
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+}
+li {
+  padding: 0 18px;
+}
+.nav-link {
+  font-size: 1.2em;
+  font-family: "Montserrat-light";
+}
+
+a {
+  font-size: 1.2rem;
+  font-family: "Montserrat-light";
+}
+
+.navbar-toggler-icon {
+  color: #ff4c68;
+}
+
+/*  */
+
+header {
+  background-color: white;
+  /* display: inline-flex; */
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  
+}
+.logo {
+ color: black;
+ margin-right: auto;
+ padding: 0px 60px;
+}
+.logo span {
+  color: #ff4c68;
+}
+.links {
+  color: white;
+  display: flex;
+  
+}
+
+.links li a {
+		color: #ff4c68;
+  margin: auto;
+  padding: 10px;
+  font-size: 1.2em;
+}
+.links li a:hover {
+  color: #00e5ff;
+	font-size: 1.5em;
+	text-decoration: none;
+  transition: ease 300ms;
+}

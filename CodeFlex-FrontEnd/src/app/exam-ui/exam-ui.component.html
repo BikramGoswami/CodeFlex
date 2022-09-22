@@ -1,0 +1,42 @@
+
+<div class="header">
+    <b>CODEFLEX</b>
+</div>
+<div class="topnav">    
+    <button type="submit" class="button submit"(click)="submit()">Submit Test</button>
+</div>
+<div class="side"> 
+    Time Left:
+    <div id="timer">{{countDiv}}</div>   
+ </div>
+
+<div class="radio-list">
+<div class="middle radio-item">
+    <p>{{questionIndex+1}}. {{questions[questionIndex].question}}</p>
+    
+    <div class="radio-item">
+        <input type="radio" name="radio" id="option1" value="{{questions[questionIndex].option_1}}" [(ngModel)]="userResponse[questionIndex].userAnswer">
+      
+        <label for="option1">{{questions[questionIndex].option_1}}</label>
+    </div>
+    <div class="radio-item">
+        <input type="radio" name="radio" id="option2" value="{{questions[questionIndex].option_2}}" [(ngModel)]="userResponse[questionIndex].userAnswer">
+      
+        <label for="option2">{{questions[questionIndex].option_2}}</label>
+    </div>
+    <div class="radio-item">
+        <input type="radio" name="radio" id="option3" value="{{questions[questionIndex].option_3}}" [(ngModel)]="userResponse[questionIndex].userAnswer">
+      
+        <label for="option3">{{questions[questionIndex].option_3}}</label>
+    </div>
+    <div class="radio-item">
+        <input type="radio" name="radio" id="option4" value="{{questions[questionIndex].option_4}}" [(ngModel)]="userResponse[questionIndex].userAnswer">
+      
+        <label for="option4">{{questions[questionIndex].option_4}}</label>
+    </div>
+
+    <button *ngIf="questionIndex!=0" class="button" value="prev" (click)="prevQues()">Previous</button>
+    <button *ngIf="questionIndex<questions.length-1"  class="button" value="next" (click)="nextQues()">Next</button>
+</div>
+</div>
+

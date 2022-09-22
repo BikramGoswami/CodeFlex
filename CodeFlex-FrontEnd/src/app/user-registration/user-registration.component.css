@@ -1,0 +1,81 @@
+
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #fccb90;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  }
+
+  #features {
+    min-height: 100vh;
+    position: absolute;
+    }
+    
+.container-fluid {
+  padding: 3% 15%;
+  text-align: center;
+  margin: auto;
+  }
+  
+.form-group {
+  width: 90%;
+  margin: 0 auto;
+}
+
+form {
+  background-color: white;
+  max-width: 600px;
+  padding: 40px 10px;
+  margin: auto;
+  border-radius: 8px;
+}
+.form-control {
+  margin: 5% 0;
+}
+
+.register {
+  padding: 10px;
+  max-width: 90%;
+  border-radius: 100%;
+  margin: 0 auto 30px;
+}
+h6 {
+  float: left;
+  color: grey;
+}
+
+.outer {
+	background-color: white;
+	width: 160px;
+	margin: auto;
+	border-radius: 8px;
+  margin-bottom: 50px;
+}
+.inner {
+	background-image: linear-gradient(to right, #d8363a, #dd3675);
+	width: 145px;
+	margin: auto;
+	
+}
+h3 {
+  color: white;
+	text-align: center;
+	padding: auto;
+}
+
+
+.btn-sub {
+  border: 1px solid #d8363a;
+  background-color: white;
+  color: red;
+}
+
+.btn-sub:hover {
+  background-color: #d8363a;
+  color: white;
+}
+

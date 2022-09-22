@@ -1,0 +1,78 @@
+
+#features {
+  min-height: 100vh;
+  position: absolute;
+  }
+  
+.container-fluid {
+padding: 3% 15%;
+text-align: center;
+margin: auto;
+}
+
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #fccb90;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  }
+
+.form-outline {
+  width: 90%;
+  margin: 0 auto;
+}
+
+form {
+  background-color: white;
+  max-width: 450px;
+  padding: 40px 0;
+  margin: auto;
+  border-radius: 8px;
+}
+#box1 {
+  margin-bottom: 10%;
+}
+
+#box3 {
+  padding: 0 8% 5%;
+}
+.log-in {
+  width: 90%;
+  margin: 5% auto;
+}
+.sign-in {
+  padding: 10px;
+  margin-bottom: 30px;
+}
+h3 {
+  color: white;
+}
+h6 {
+  float: left;
+  color: grey;
+}
+.outer {
+	background-color: white;
+	width: 160px;
+	margin: auto;
+	border-radius: 8px;
+  margin-bottom: 50px;
+}
+.inner {
+	background-image: linear-gradient(to right, #d8363a, #dd3675);
+	width: 145px;
+	margin: auto;
+	
+}
+h3 {
+  color: white;
+	text-align: center;
+	padding: auto;
+}
+.text-muted {
+  color: aqua;
+}

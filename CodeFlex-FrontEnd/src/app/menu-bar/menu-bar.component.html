@@ -1,0 +1,31 @@
+<!-- <div class="topnav">
+  <a href="#" class="active" >Home</a>
+  <a href="admin_login" *ngIf="sessionUser==null && sessionAdmin==null" >Admin</a>
+  <a href="admin_dashboard" *ngIf="sessionUser==null && sessionAdmin!=null" >Admin</a>
+  <a href="userDashboard" *ngIf="sessionUser!=null">User Dashboard</a>
+  <a href="user_login" class="right" *ngIf="sessionUser==null && sessionAdmin==null">Login</a>
+  <a href="#" class="right" (click)="logout()"  *ngIf="sessionUser!=null || sessionAdmin!=null" >Logout</a>
+  <a href="user_registration"  class="right" *ngIf="sessionAdmin==null && sessionUser==null" >Register</a>
+</div> -->
+
+
+<header>
+  <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand logo">CODE<span>FLEX</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="links navbar-nav ms-auto">
+            <li><a href="#" class="active" >Home</a></li>
+            <li><a href="admin_login" *ngIf="sessionUser==null && sessionAdmin==null" >Admin</a></li>
+            
+            <li><a href="user_registration"  class="right" *ngIf="sessionAdmin==null && sessionUser==null" >Register</a></li>
+            <li><a href="user_login" class="right" *ngIf="sessionUser==null && sessionAdmin==null">Login</a></li>
+            <li><a href="admin_dashboard" class="right" *ngIf="sessionUser==null && sessionAdmin!=null" >Admin</a></li>
+            <li><a href="userDashboard" *ngIf="sessionUser!=null">User Dashboard</a></li>
+            <li><a href="#" class="right" (click)="logout()"  *ngIf="sessionUser!=null || sessionAdmin!=null" >Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+</header>

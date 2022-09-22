@@ -1,0 +1,21 @@
+<div class="card text-center" id="j">
+    <div class="card-body">
+        <div class="modal-body">
+                       
+            <div class="thank-you-pop">
+                <img src="http://goactionstations.co.uk/wp-content/uploads/2017/03/Green-Round-Tick.png" alt="">
+                <h1>Congratulations</h1>
+                <h2 >You have successfully completed level <span>{{levelid}}</span></h2>
+                <h3 *ngIf="levelid<3" >You can proceed to to level <span>{{levelid+1}}</span></h3>
+                
+             </div>
+
+      
+   
+
+<div *ngIf="levelid<3"><button type="button" (click)="newExam()" class="btn btn-success">Level {{levelid+1}}</button></div><br> <br>
+<div *ngIf="levelid==3"><button (click)="completed()" class="btn btn-secondary btn-sm">Back to dashboard</button></div> <br> <br>
+</div>
+</div>
+<br><br><br><br><br><br>
+</div>

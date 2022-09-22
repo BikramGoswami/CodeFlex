@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<app-menu-bar></app-menu-bar>
+<div class="card-body">
+
+    <body class="card-body">
+        <div>
+            <h2 style="color: rgb(0, 0, 0)">USER REPORT</h2>
+            <table class="w3-table-all w3-centered">
+                <tr id="table">
+                    <th>USER ID</th>
+                    <th>COURSE NAME</th>
+                    <th>LEVEL_1 SCORE</th>
+                    <th>LEVEL_2 SCORE</th>
+                    <th>LEVEL_3 SCORE</th>
+                </tr>
+                <tr *ngFor="let report of reports" id="table">
+                    <td>{{userid}}</td>
+                    <td *ngIf="report.course_id == 101">Java</td>
+                    <td *ngIf="report.course_id == 102">Python</td>
+                    <td *ngIf="report.course_id == 103">.Net</td>
+                    <td *ngIf="report.course_id == 104">C</td>
+                    <td *ngIf="report.course_id == 105">PHP</td>
+                    <td *ngIf="report.course_id == 106">C++</td>
+                    <td>{{report.level_1}}</td>
+                    <td>{{report.level_2}}</td>
+                    <td>{{report.level_3}}</td>
+                </tr>
+            </table>
+            <!-- <button class="button" *ngIf="userid!=0">Print Report</button> -->
+            <button class="button" onclick="window.print()">Export As PDF</button>
+        </div>
+    </body>
+</div>

@@ -1,0 +1,71 @@
+<app-menu-bar></app-menu-bar>
+
+  <section class="row container-fluid gradient-custom-2" id="features">
+
+    <div class="feature-box">
+
+      <div class="outer">
+        <div class="inner">
+          <h3><b>LOGIN</b></h3>
+        </div>
+      </div>
+      <form  [formGroup]="form1" (ngSubmit)="loginCheck()">
+        
+        <div class="form-outline mb-4">
+          <h6>Enter email : </h6>
+          <input type="email" id="box1" name="email" [(ngModel)]="login.email" class="form-control form-control-md" 
+          placeholder="Enter your email"  formControlName="email" title="Please enter email" required />
+         <!-- <div *ngIf="form1.get('email').hasError('required') && form1.get('email').touched && form1.get('email').pristine" class="alert alert-danger" >
+            Please Enter email
+          </div> -->
+          <div class="wrong" *ngIf="form1.get('email').invalid && form1.get('email').dirty" class="alert alert-danger">
+              Please Enter Correct Email Address
+          </div>
+        </div>
+      
+        <div class="form-outline mb-4">
+          <h6>Enter Password :</h6>
+          <input type="password" id="box2" class="form-control form-control-md" placeholder="Enter your password" 
+          name="password" [(ngModel)]="login.password" formControlName="password" required />
+          <!-- 
+            <div *ngIf="form1.get('password').touched">
+            <div *ngIf="form1.get('password').hasError('required')" class="alert alert-danger">
+                Please Enter password
+            </div>
+            <div *ngIf="form1.get('password').invalid && form1.get('password').dirty" class="alert alert-danger">
+                Please enter a password containing alphanumeric characters as well as special character
+            </div>
+        </div>
+           -->
+        </div>
+      
+        <div class="d-flex justify-content-between align-items-center" id="box3">
+          <div class="form-check mb-0">
+            <input class="form-check-input me-2" type="checkbox" value="" id="chechBox" />
+            <label class="form-check-label" for="checkBox">
+              Remember me
+            </label>
+          </div>
+          <div>
+            <a class="text-muted" (click)="forgetPassword()" >Forgot password?</a>
+          </div>
+        </div>
+      
+        <div class="text-center mb-4">
+            <button type="submit" [disabled]="form1.invalid" class="btn btn-primary gradient-custom-2 log-in">Login</button>
+          </div>
+        
+
+        <div class="d-flex align-items-center justify-content-center pb-4">
+          <p class="mb-0 me-2">Don't have an account?</p>
+          <a href='#' routerLink='/user_registration'><button type="button" class="btn btn-outline-danger">Register</button></a>
+          
+          <!-- <button type="button" class="btn btn-outline-danger">Register</button> -->
+        </div>
+      
+      </form>
+    </div>
+
+  </section>
+
+  

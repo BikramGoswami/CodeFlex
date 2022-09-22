@@ -1,0 +1,42 @@
+<app-menu-bar></app-menu-bar>
+
+  <section class="row container-fluid gradient-custom-2" id="features">
+
+    <div class="feature-box">
+
+      <div class="outer">
+        <div class="inner">
+          <h3><b>ADMIN</b></h3>
+        </div>
+      </div>
+
+      <form [formGroup]="form2" (ngSubmit)="loginCheck()" >
+        
+        <div class="form-outline mb-4 box1">
+          <h6>Enter email : </h6>
+          <input type="email" id="box1" name="email" [(ngModel)]="adminlogin.email" class="form-control form-control-md" 
+          placeholder="Enter your correct email address"  formControlName="email" 
+          title="Please enter correct email address" required/>
+          
+        </div>
+        
+        <div class="form-outline mb-4 box2">
+          <h6>Enter Password</h6>
+          <input type="password" id="box2" class="form-control form-control-md" placeholder="Enter your password" 
+          name="password" [(ngModel)]="adminlogin.password" formControlName="password" 
+          title="Please enter correct password" required/>
+        </div>
+         
+      
+        <div class="text-center pt-1 mb-5 pb-1">
+            <button type="submit" class="btn btn-block fa-lg mb-3 log-in">Login</button>
+            <!-- <a class="text-muted" href="#!">Forgot password?</a> -->
+            <a class="text-muted" (click)="forgetPassword()" >Forgot password?</a>
+          </div>
+        
+      </form>
+    </div>
+
+  </section>
+
+  

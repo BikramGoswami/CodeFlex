@@ -1,0 +1,68 @@
+<app-menu-bar></app-menu-bar>
+
+
+<section class="color-background" id="title">
+    <div class="container-fluid">
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand">CodeFlex</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      </nav>
+
+      <div class="row title-content">
+        <div class="col-lg-6">
+          <h1 class="big-heading">Stay positive, work hard, make it happen.</h1>
+          
+          <a href="user_login" class="right" *ngIf="sessionUser==null && sessionAdmin==null"><button class="btn btn-lg btn-dark download-btn" type="button"> Login</button></a>
+          <!-- <button class="btn btn-lg btn-dark download-btn" type="button"> Login</button> -->
+          
+          <a href="user_registration"  class="right" *ngIf="sessionAdmin==null" ><button class="btn btn-lg btn-outline-light download-btn" type="button"> Register</button></a>
+          <!-- <button class="btn btn-lg btn-outline-light download-btn" type="button"> Register</button> -->
+        </div>
+        <div class="col-lg-6">
+          <img class="header-img" src="assets/images/girl1.png" alt="Girl images">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Features -->
+
+  <section class="no-color-background row container-fluid" id="features">
+
+    <div class="col-lg-4 feature-box">
+      <i class="fa-solid fa-circle-check fa-4x feature-icon"></i>
+      <h3>Easy to use.</h3>
+      <p class="feature-para">So easy to use, even you could do it.</p>
+    </div>
+
+    <div class="col-lg-4 feature-box">
+      <i class="fa-solid fa-bullseye fa-4x feature-icon"></i>
+      <h3>To the point</h3>
+      <p class="feature-para">We have all the features.</p>
+    </div>
+
+    <div class="col-lg-4 feature-box">
+      <i class="fa-solid fa-heart fa-4x feature-icon"></i>
+      <h3>Guaranteed to work.</h3>
+      <p class="feature-para">I am in a relationship with studies.</p>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="no-color-background container-fluid" id="footer">
+    <i class="footer-icon fa-brands fa-twitter"></i>
+    <i class="footer-icon fa-brands fa-facebook-f"></i>
+    <i class="footer-icon fa-brands fa-instagram"></i>
+    <i class="footer-icon fa-solid fa-envelope"></i>
+
+    <p class="copyright">© Copyright 2022 CodeFlex</p>
+
+  </footer>
